@@ -45,7 +45,7 @@ dependencies = [
 # Upper bounds are deliberate: both frameworks shipped or announced a breaking major
 # release within weeks of this project starting.
 mcp = ["mcp>=2.1,<3"]
-fastmcp = ["fastmcp>=3.4,<4"]
+fastmcp = ["fastmcp>=3.4,<5"]
 # Optional ticket store for servers running behind a load balancer. Imported only
 # through mcp_upload.redis_store, so the package root never needs it.
 redis = ["redis>=5.0"]
