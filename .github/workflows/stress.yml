@@ -70,7 +70,7 @@ jobs:
           # sep_flow.py exits 1 when a flow fails; check.py reports which one.
           uv run --no-sync python stress/sep_flow.py > stress-results/sep_flow.json || true
           uv run --no-sync python stress/check.py --sep-flow stress-results/sep_flow.json
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: ${{ !cancelled() }}
         with:
           name: stress-results
